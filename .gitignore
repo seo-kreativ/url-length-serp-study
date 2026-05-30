@@ -1,0 +1,26 @@
+# Row-level data is NOT redistributed (DataForSEO ToS) — keep raw CSVs out of git
+data/*.csv
+data/*.json
+data/*.parquet
+!data/README.md
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Env / secrets
+.env
+.env.local
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs_*.txt

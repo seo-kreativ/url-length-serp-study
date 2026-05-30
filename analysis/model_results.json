@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "timestamp": "2026-05-28T10:02:12.757401",
+    "n_rows": 22250,
+    "n_keywords": 2862,
+    "n_domains_with_authority": 21891,
+    "authority_source": "DataForSEO domain_rank_overview (Germany/de)"
+  },
+  "correlations": {
+    "path_length": {
+      "label": "path_length",
+      "rho": 0.0526,
+      "p": 0.0,
+      "n": 22250
+    },
+    "path_depth": {
+      "label": "path_depth",
+      "rho": 0.0296,
+      "p": 1e-05,
+      "n": 22250
+    },
+    "keyword_in_url": {
+      "label": "keyword_in_url",
+      "rho": 0.0037,
+      "p": 0.578706,
+      "n": 22250
+    },
+    "authority_decile_v2": {
+      "label": "authority_decile_v2 (NEU, extern)",
+      "rho": -0.0584,
+      "p": 0.0,
+      "n": 22250
+    },
+    "log_organic_kw": {
+      "label": "log_organic_kw (NEU)",
+      "rho": -0.0623,
+      "p": 0.0,
+      "n": 21891
+    },
+    "log_organic_etv": {
+      "label": "log_organic_etv (NEU)",
+      "rho": -0.1043,
+      "p": 0.0,
+      "n": 21891
+    },
+    "domain_rank_decile": {
+      "label": "domain_rank_decile (ALT, n_appearances-Proxy)",
+      "rho": -0.4217,
+      "p": 0.0,
+      "n": 22250
+    }
+  },
+  "models": {
+    "M1_naive": {
+      "label": "M1_naive",
+      "formula": "position ~ path_length",
+      "n": 22250,
+      "r2": 0.0026,
+      "r2_adj": 0.0026,
+      "aic": 109217.61,
+      "path_length_beta": 0.005639,
+      "path_length_pval": 0.0
+    },
+    "M2_authority": {
+      "label": "M2_authority",
+      "formula": "position ~ path_length + authority_decile_v2",
+      "n": 22250,
+      "r2": 0.0074,
+      "r2_adj": 0.0073,
+      "aic": 109111.73,
+      "path_length_beta": 0.007099,
+      "path_length_pval": 0.0
+    },
+    "M3_pagetype": {
+      "label": "M3_pagetype",
+      "formula": "position ~ path_length + authority_decile_v2 + C(page_type)",
+      "n": 22250,
+      "r2": 0.0081,
+      "r2_adj": 0.0078,
+      "aic": 109104.62,
+      "path_length_beta": 0.004757,
+      "path_length_pval": 1e-06
+    },
+    "M4_full": {
+      "label": "M4_full",
+      "formula": "position ~ path_length + authority_decile_v2 + C(page_type) + path_depth + keyword_in_url + has_parameters + word_count_path + keyword_difficulty + C(search_intent) + has_featured_snippet",
+      "n": 22250,
+      "r2": 0.0119,
+      "r2_adj": 0.0113,
+      "aic": 109034.98,
+      "path_length_beta": 0.003612,
+      "path_length_pval": 0.035591
+    }
+  },
+  "shrinkage_M1_to_M4": 35.95,
+  "ymyl_segmented": {
+    "YMYL": {
+      "n": 7742,
+      "r2": 0.0112,
+      "path_length_beta": -0.001787,
+      "path_length_pval": 0.304972,
+      "median_path_length": 32.0
+    },
+    "NonYMYL": {
+      "n": 14508,
+      "r2": 0.0135,
+      "path_length_beta": 0.008128,
+      "path_length_pval": 0.0,
+      "median_path_length": 32.0
+    },
+    "Gambling": {
+      "n": 3015,
+      "r2": 0.0099,
+      "path_length_beta": 0.003537,
+      "path_length_pval": 0.395963,
+      "median_path_length": 26.0
+    }
+  },
+  "methodology_changes": {
+    "previous": "domain_rank_decile (was actually n_appearances-derived, in-sample frequency proxy, ρ=0.78 with n_appearances)",
+    "current": "authority_decile_v2 derived from external DataForSEO organic_keywords_count via log+decile binning",
+    "why": "n_appearances is circular (rank-frequency in our sample predicting rank). External signal is independent."
+  }
+}
