@@ -38,8 +38,13 @@ python phase10_methodology_upgrade.py  # cluster SE, ordered logit, splines
 Re-collected SERPs will differ slightly from the published snapshot because of
 SERP volatility (the study snapshot is May 26–27, 2026).
 
-## Raw data on request
+## Raw data policy
 
-For academic replication or peer review, the exact row-level snapshot used in the
-study can be shared on request, subject to DataForSEO's terms. Contact via
-<https://www.seo-kreativ.de>.
+For licensing and compliance reasons, no row-level raw data is published. The public
+release contains only aggregated results and analysis code. Raw data is not shared on
+request. The full dataset is reproducible with your own DataForSEO credentials via the
+pipeline above.
+
+(DE) Aus Lizenz- und Compliance-Gründen werden keine zeilenweisen Rohdaten
+veröffentlicht. Der öffentliche Release enthält nur aggregierte Ergebnisse und
+Analysecode. Rohdaten werden nicht auf Anfrage geteilt.

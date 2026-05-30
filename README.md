@@ -46,9 +46,9 @@ This repository ships:
 - **All visualizations** — [`/charts`](./charts) (PNG + SVG, created by the author)
 
 It does **not** ship the row-level SERP data. Those rows (keyword, position, URL, domain) come
-from the DataForSEO API, whose Terms of Service do not explicitly permit redistributing row-level
-API output. See [`/data/README.md`](./data/README.md) for the rationale, the full reproduction
-pipeline, and how to request the exact snapshot for academic replication.
+from the DataForSEO API. For licensing and compliance reasons, no row-level raw data is published —
+and it is not shared on request either. The full dataset is reproducible with your own DataForSEO
+credentials via the pipeline above. See [`/data/README.md`](./data/README.md) for details.
 
 ---
 
