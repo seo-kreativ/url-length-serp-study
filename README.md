@@ -1,5 +1,7 @@
 # URL Length & Google Rankings — A 27,000-SERP Study
 
+[![DOI](https://zenodo.org/badge/1276949534.svg)](https://doi.org/10.5281/zenodo.20798700)
+
 An independent analysis of whether shorter URLs rank better in google.de, based on 27,291 SERP
 results across 2,862 keywords and 9 industries. The headline finding: after controlling for an
 **external** domain-authority signal, the apparent URL-length advantage shrinks by ~36 % and stays
@@ -128,7 +130,7 @@ Citation:
 
 ```
 Ott, C. (2026). URL Length & Google Rankings — A 27,000-SERP Study.
-https://www.seo-kreativ.de/blog/url-laenge-ranking/
+seo-kreativ.de. https://doi.org/10.5281/zenodo.20798700
 ```
 
 ---
