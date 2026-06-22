@@ -133,6 +133,19 @@ https://www.seo-kreativ.de/blog/url-laenge-ranking/
 
 ---
 
+## Disclaimer
+
+This repository provides technical and analytical information for educational purposes,
+without warranty of any kind. Nothing here is a guarantee of rankings or SEO outcomes,
+and it is not legal advice. The findings are observational correlations, not proof of
+causation — see [`/docs/methodology.md`](./docs/methodology.md) for the full limitations.
+
+All trademarks and product names (e.g. Google, DataForSEO) are the property of their
+respective owners and are used here for descriptive purposes only. This study is
+independent and not affiliated with or endorsed by Google or DataForSEO.
+
+---
+
 ## Contact
 
 Questions, critique, methodology feedback welcome — open a GitHub Issue or reach out via

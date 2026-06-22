@@ -38,6 +38,9 @@ python phase10_methodology_upgrade.py  # cluster SE, ordered logit, splines
 Re-collected SERPs will differ slightly from the published snapshot because of
 SERP volatility (the study snapshot is May 26–27, 2026).
 
+Any use of the DataForSEO API and its data is your own responsibility and must
+comply with the current [DataForSEO Terms of Service](https://dataforseo.com/terms-of-service).
+
 ## Raw data policy
 
 For licensing and compliance reasons, no row-level raw data is published. The public
