@@ -1,0 +1,39 @@
+{
+  "title": "URL Length & Google Rankings — A 27,000-SERP Study",
+  "description": "An independent analysis of whether shorter URLs rank better in google.de SERPs, based on 27,291 SERP results across 2,862 keywords and 9 industries. After controlling for an external domain-authority signal (DataForSEO organic keyword counts), the apparent URL-length advantage shrinks by roughly 36% and stays tiny — URL length behaves as a micro-signal, not a primary ranking lever. The often-cited 'YMYL exception' is not detectable once external authority is controlled for. This repository contains the analysis code (phase0–phase10), aggregated results (regression models, robustness checks, YMYL segmentation), and author-created charts. Row-level SERP data is not redistributed; the dataset is reproducible with one's own DataForSEO credentials. Code is MIT-licensed; aggregated results and charts are CC BY 4.0.",
+  "upload_type": "dataset",
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "creators": [
+    {
+      "name": "Ott, Christian",
+      "affiliation": "seo-kreativ.de"
+    }
+  ],
+  "keywords": [
+    "SEO",
+    "search engine optimization",
+    "URL length",
+    "Google ranking factors",
+    "SERP analysis",
+    "domain authority",
+    "confounding",
+    "regression analysis",
+    "robustness checks",
+    "DataForSEO",
+    "google.de"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://www.seo-kreativ.de/blog/url-laenge-ranking/",
+      "relation": "isDocumentedBy",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "https://github.com/seo-kreativ/url-length-serp-study",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ],
+  "notes": "Independent study, not affiliated with or endorsed by Google or DataForSEO. All trademarks are the property of their respective owners. Observational correlations, not proof of causation."
+}
